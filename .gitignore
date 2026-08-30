@@ -1,0 +1,7 @@
+# Ignore dump files from browser saving
+Songwriter, Tonstudio und Musikproduktionen Hannover.html
+Songwriter, Tonstudio und Musikproduktionen Hannover_files/
+download_assets.js
+download_assets.ps1
+.DS_Store
+Thumbs.db

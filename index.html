@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Songwriter, Tonstudio und Musikproduktionen Hannover | Waldemar Krucinski (vir2ose)</title>
+  
+  <!-- Meta & SEO -->
+  <meta name="description" content="Professionelle Musikproduktionen, Audiobearbeitungen und Sounddesign bei dem Musikproduzenten vir2ose im Tonstudio in Hannover.">
+  <meta name="keywords" content="Musikproduzent, Musikproduktion, Songwriter, Songwriting, Tonstudio, Tonstudio Hannover, Hamburg, Bremen, Braunschweig, vir2ose, Waldemar Krucinski">
+  <meta name="author" content="Waldemar Krucinski">
+  <link rel="canonical" href="https://www.waldemar-krucinski.com/">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.waldemar-krucinski.com/">
+  <meta property="og:title" content="Songwriter, Tonstudio und Musikproduktionen Hannover | vir2ose">
+  <meta property="og:description" content="Professionelle Musikproduktionen und Audiobearbeitungen bei dem Musikproduzenten vir2ose im Tonstudio in Hannover.">
+  <meta property="og:image" content="assets/images/logo.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+  <link rel="apple-touch-icon" href="assets/images/logo.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-neutral-950 text-neutral-100 font-roboto antialiased selection:bg-amber-600 selection:text-white">
+
+  <!-- Navigation Header -->
+  <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <img src="assets/images/logo.jpg" alt="vir2ose Logo" class="w-12 h-12 rounded-full border-2 border-amber-600/60 object-cover shadow-lg shadow-amber-900/20 group-hover:scale-105 transition-transform duration-300">
+        <div class="flex flex-col">
+          <span class="font-montserrat font-bold text-lg tracking-wider text-neutral-100 group-hover:text-amber-500 transition-colors">vir2ose</span>
+          <span class="text-xs text-neutral-400 font-light -mt-1 tracking-widest uppercase">Tonstudio Hannover</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 font-montserrat text-sm font-semibold">
+        <a href="#bio" class="nav-link px-3 py-2 text-neutral-300 hover:text-amber-400 transition-colors">Bio</a>
+        <a href="#listen" class="nav-link px-3 py-2 text-neutral-300 hover:text-amber-400 transition-colors">Hören</a>
+        <a href="#gallery" class="nav-link px-3 py-2 text-neutral-300 hover:text-amber-400 transition-colors">Galerie</a>
+        <a href="#partners" class="nav-link px-3 py-2 text-neutral-300 hover:text-amber-400 transition-colors">Partner</a>
+        <a href="#contact" class="nav-link px-3 py-2 text-neutral-300 hover:text-amber-400 transition-colors">Kontakt</a>
+      </nav>
+
+      <!-- Header Action Quicklinks -->
+      <div class="hidden lg:flex items-center gap-3">
+        <!-- Subdomain Badges -->
+        <a href="https://plugins.waldemar-krucinski.com" target="_blank" class="px-3 py-1.5 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/30 hover:bg-amber-500 hover:text-neutral-950 transition-all flex items-center gap-1.5 shadow-sm">
+          <i class="fa-solid fa-sliders"></i> Plugins
+        </a>
+        <a href="https://radio.waldemar-krucinski.com" target="_blank" class="px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500 hover:text-neutral-950 transition-all flex items-center gap-1.5 shadow-sm">
+          <i class="fa-solid fa-radio"></i> Radio FM
+        </a>
+        
+        <!-- SoundCloud -->
+        <a href="https://soundcloud.com/waldemar-krucinski" target="_blank" aria-label="SoundCloud" class="w-9 h-9 rounded-full bg-neutral-800/80 hover:bg-orange-600 text-neutral-300 hover:text-white flex items-center justify-center transition-all duration-300">
+          <i class="fa-brands fa-soundcloud text-base"></i>
+        </a>
+        
+        <!-- Phone -->
+        <a href="tel:+491707444776" class="px-3.5 py-1.5 rounded-full bg-neutral-800 hover:bg-amber-600 text-neutral-200 hover:text-white text-xs font-medium flex items-center gap-2 border border-neutral-700 transition-all">
+          <i class="fa-solid fa-phone text-amber-400"></i> +49 170 7444776
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex md:hidden items-center gap-2">
+        <button id="mobile-menu-btn" class="text-neutral-300 hover:text-amber-400 focus:outline-none p-2" aria-label="Menü öffnen">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-neutral-900/95 backdrop-blur-lg border-b border-neutral-800 px-6 py-5 space-y-4">
+      <a href="#bio" class="block text-base font-semibold text-neutral-200 hover:text-amber-400 mobile-nav-link">Bio</a>
+      <a href="#listen" class="block text-base font-semibold text-neutral-200 hover:text-amber-400 mobile-nav-link">Hören & Musik</a>
+      <a href="#gallery" class="block text-base font-semibold text-neutral-200 hover:text-amber-400 mobile-nav-link">Galerie</a>
+      <a href="#partners" class="block text-base font-semibold text-neutral-200 hover:text-amber-400 mobile-nav-link">Partner</a>
+      <a href="#contact" class="block text-base font-semibold text-neutral-200 hover:text-amber-400 mobile-nav-link">Kontakt & Newsletter</a>
+      
+      <div class="pt-4 border-t border-neutral-800 flex flex-wrap gap-2">
+        <a href="https://plugins.waldemar-krucinski.com" target="_blank" class="px-3 py-1.5 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/40 flex items-center gap-1.5">
+          <i class="fa-solid fa-sliders"></i> Plugin Shop
+        </a>
+        <a href="https://radio.waldemar-krucinski.com" target="_blank" class="px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 flex items-center gap-1.5">
+          <i class="fa-solid fa-radio"></i> ART RADIO
+        </a>
+        <a href="tel:+491707444776" class="px-3 py-1.5 rounded-full text-xs font-semibold bg-neutral-800 text-neutral-200 flex items-center gap-1.5">
+          <i class="fa-solid fa-phone text-amber-400"></i> Anrufen
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 pb-20 overflow-hidden hero-bg">
+    <!-- Background Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-neutral-950/70 via-neutral-950/60 to-neutral-950 z-0"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
+      
+      <!-- Studio Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-neutral-900/80 border border-amber-600/30 text-amber-400 text-xs font-montserrat uppercase tracking-widest mb-6 backdrop-blur-md animate-fade-in">
+        <i class="fa-solid fa-compact-disc animate-spin-slow"></i> Studio vir2ose • Hannover
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="font-montserrat font-extrabold text-3xl sm:text-5xl md:text-6xl text-gold tracking-tight leading-tight mb-6 animate-slide-up">
+        Musikproduktionen und Songwriting in Hannover
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="font-roboto font-light text-base sm:text-lg md:text-xl text-neutral-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+        Professionelle Musikproduktionen, Audiobearbeitungen und Sounddesign im Tonstudio <span class="text-amber-400 font-medium">vir2ose</span> in Hannover
+      </p>
+
+      <!-- CTA Button -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+        <a href="#listen" class="cta-gold-button group px-8 py-4 rounded-full text-neutral-950 font-montserrat font-bold text-sm tracking-wider uppercase flex items-center gap-3 shadow-xl shadow-amber-600/20 hover:scale-105 transition-all duration-300">
+          <i class="fa-solid fa-play text-xs group-hover:translate-x-0.5 transition-transform"></i>
+          <span>JETZT HÖREN</span>
+        </a>
+        <a href="#contact" class="px-8 py-4 rounded-full border border-neutral-700 hover:border-amber-500/60 text-neutral-300 hover:text-white font-montserrat font-medium text-sm tracking-wider uppercase transition-all duration-300 backdrop-blur-sm bg-neutral-900/40">
+          Kontakt aufnehmen
+        </a>
+      </div>
+
+      <!-- Social Hub Bar -->
+      <div class="pt-6 border-t border-neutral-800/80 max-w-md mx-auto">
+        <p class="text-xs uppercase tracking-widest text-neutral-400 mb-4 font-montserrat">Folgen • Teilen • Hören</p>
+        <div class="flex items-center justify-center gap-4">
+          <a href="https://www.facebook.com/waldemar.krucinski/" target="_blank" aria-label="Facebook" class="social-icon-btn hover:bg-blue-600 hover:text-white">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCMsdQBpGOAY5wGFgA34T5mg" target="_blank" aria-label="YouTube" class="social-icon-btn hover:bg-red-600 hover:text-white">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="mailto:info@waldemar-krucinski.com" aria-label="E-Mail" class="social-icon-btn hover:bg-amber-600 hover:text-white">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://wa.me/+491707444776" target="_blank" aria-label="WhatsApp" class="social-icon-btn hover:bg-emerald-600 hover:text-white">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://soundcloud.com/waldemar-krucinski" target="_blank" aria-label="SoundCloud" class="social-icon-btn hover:bg-orange-600 hover:text-white">
+            <i class="fa-brands fa-soundcloud"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Grunge Transition Divider -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10 pointer-events-none">
+      <img src="assets/images/grunge_bottom.png" alt="Divider" class="w-full h-auto object-cover opacity-90">
+    </div>
+  </section>
+
+  <!-- Bio Section -->
+  <section id="bio" class="relative py-24 bg-neutral-950 text-neutral-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <!-- Section Title -->
+      <div class="text-center mb-16">
+        <h2 class="font-abril text-4xl sm:text-5xl md:text-6xl text-gold mb-3 tracking-widest">B I O</h2>
+        <div class="w-24 h-1 bg-amber-600/70 mx-auto rounded-full mb-6"></div>
+        <blockquote class="italic text-lg sm:text-xl font-montserrat text-neutral-300 font-light">
+          "EIN SONG FÜR DICH IST EINE FREUDE FÜR MICH"
+        </blockquote>
+      </div>
+
+      <!-- Bio Content Card -->
+      <div class="bio-card bg-neutral-900/60 border border-neutral-800 rounded-2xl p-8 sm:p-12 shadow-2xl backdrop-blur-md relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-amber-600/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="space-y-6 text-base sm:text-lg text-neutral-300 font-light leading-relaxed">
+          <p>
+            <strong class="text-amber-400 font-medium font-montserrat">Waldemar Krucinski</strong>, bekannt als 
+            <span class="text-gold font-bold font-montserrat">*** vir2ose ***</span> 
+            (geboren am 25. November 1965 in Polen), betrachtet Musik als den zentralen Inhalt seines Lebens.
+          </p>
+
+          <p>
+            Bereits im Alter von fünf Jahren begann er, <strong class="text-neutral-100 font-normal">Violine und Klavier</strong> zu spielen. 
+            Mit sieben Jahren kam das Akkordeon hinzu, und mit zwölf Jahren erhielt er eine Gitarre, die er sich selbst beibrachte. 
+            Schon damals faszinierten ihn die unbegrenzten Möglichkeiten der Aufnahmetechnik: Mit Tonband- und Kassettenrecordern experimentierte er intensiv, um seine ersten eigenen "Multitracks" und "Mixe" zu kreieren.
+          </p>
+
+          <p>
+            Die Musik ließ ihn seit seiner Kindheit nicht mehr los. Im Alter von sechzehn Jahren begann er ein Musikstudium für <strong class="text-neutral-100 font-normal">Bratsche</strong> (als Hauptinstrument) und absolvierte mit neunzehn Jahren sein Studium der <strong class="text-neutral-100 font-normal">Kirchenorgel</strong>.
+          </p>
+
+          <p>
+            Waldemar Krucinski hat seine musikalischen Erfahrungen über viele Jahre hinweg durch die Zusammenarbeit mit zahlreichen renommierten Künstlern und Musikern gesammelt, was ihn sowohl mental als auch kreativ kontinuierlich bereichert hat. <em>Allen diesen Menschen gilt sein aufrichtiger Dank.</em>
+          </p>
+
+          <div class="pt-4 border-t border-neutral-800 text-neutral-200 font-normal">
+            Was einst mit Kooperationen in der Region Hannover begann, hat sich mittlerweile zu einem breiten kreativen Spektrum entwickelt, das weltweite Musikproduktionen, Audio-Software-Entwicklung und -Kooperationen in unterschiedlichsten Genres umfasst.
+          </div>
+        </div>
+
+        <!-- Ecosystem Hub Highlights inside Bio -->
+        <div class="mt-12 pt-8 border-t border-neutral-800 grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Plugin Card -->
+          <div class="bg-neutral-950/80 border border-amber-500/20 hover:border-amber-500/60 rounded-xl p-6 transition-all duration-300 group">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-sliders"></i>
+              </div>
+              <div>
+                <h4 class="font-montserrat font-bold text-neutral-100 group-hover:text-amber-400 transition-colors">vir2ose Audio Plugins</h4>
+                <p class="text-xs text-neutral-400">VPPEQ-1, VDC 2.0 & VFPA 1.0 DSP</p>
+              </div>
+            </div>
+            <p class="text-xs text-neutral-400 mb-4">Professionelle C++ JUCE DSP Audio-Plugins für Mixing, Mastering & Sounddesign.</p>
+            <a href="https://plugins.waldemar-krucinski.com" target="_blank" class="inline-flex items-center gap-2 text-xs font-semibold text-amber-400 hover:text-amber-300">
+              Zum Plugin Store <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+          </div>
+
+          <!-- Radio Card -->
+          <div class="bg-neutral-950/80 border border-emerald-500/20 hover:border-emerald-500/60 rounded-xl p-6 transition-all duration-300 group">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-radio"></i>
+              </div>
+              <div>
+                <h4 class="font-montserrat font-bold text-neutral-100 group-hover:text-emerald-400 transition-colors">ART RADIO fm</h4>
+                <p class="text-xs text-neutral-400">24/7 Virtuosen & Independent Artists</p>
+              </div>
+            </div>
+            <p class="text-xs text-neutral-400 mb-4">Das moderne Webradio für virtuose Musik, Chillout, Klassik & innovative Sounds.</p>
+            <a href="https://radio.waldemar-krucinski.com" target="_blank" class="inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 hover:text-emerald-300">
+              Radio Live Stream starten <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Listen / Neue Projekte Section -->
+  <section id="listen" class="relative py-24 bg-neutral-900/50 text-neutral-100 border-t border-b border-neutral-800/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center mb-16">
+        <h2 class="font-abril text-4xl sm:text-5xl md:text-6xl text-gold mb-3 tracking-widest">NEUE PROJEKTE</h2>
+        <div class="w-24 h-1 bg-amber-600/70 mx-auto rounded-full mb-4"></div>
+        <p class="text-neutral-400 font-montserrat text-sm sm:text-base">Höre exklusive Tracks & aktuelle Produktionen aus dem Studio</p>
+      </div>
+
+      <!-- Studio Custom Audio Player Component -->
+      <div class="max-w-3xl mx-auto mb-20">
+        <div class="audio-player-container bg-neutral-950 border border-amber-600/40 rounded-2xl p-6 sm:p-8 shadow-2xl shadow-amber-950/20 relative overflow-hidden">
+          <div class="absolute -top-24 -left-24 w-60 h-60 bg-amber-600/10 rounded-full blur-3xl pointer-events-none"></div>
+          
+          <!-- Player Top Header -->
+          <div class="flex items-center justify-between mb-6 pb-4 border-b border-neutral-800">
+            <div class="flex items-center gap-3">
+              <span class="relative flex h-3 w-3">
+                <span id="playing-pulse" class="hidden animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
+              </span>
+              <span class="text-xs font-montserrat uppercase tracking-widest text-neutral-400">vir2ose High-End Audio Engine</span>
+            </div>
+            <div class="text-xs font-mono text-amber-500 font-semibold" id="track-counter">1 / 5</div>
+          </div>
+
+          <!-- Currently Playing Display -->
+          <div class="flex flex-col sm:flex-row items-center gap-6 mb-8">
+            <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden border border-amber-600/30 shrink-0 relative group shadow-md shadow-black">
+              <img src="assets/images/logo.jpg" alt="Album Cover" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-neutral-950/40 flex items-center justify-center">
+                <i class="fa-solid fa-music text-amber-400 text-2xl"></i>
+              </div>
+            </div>
+            
+            <div class="text-center sm:text-left flex-1 min-w-0">
+              <h3 id="current-title" class="font-montserrat font-bold text-xl sm:text-2xl text-neutral-100 truncate mb-1 text-gold">
+                NEW INDIAN WORLD - TERRA
+              </h3>
+              <p id="current-artist" class="text-sm font-roboto text-neutral-400 font-light mb-3">
+                Komposition & Produktion: <span class="text-neutral-200">Waldemar Krucinski (vir2ose)</span>
+              </p>
+              
+              <!-- Realtime Spectrum Visualizer Bars -->
+              <div id="visualizer" class="flex items-end gap-1 h-6">
+                <span class="v-bar"></span><span class="v-bar"></span><span class="v-bar"></span>
+                <span class="v-bar"></span><span class="v-bar"></span><span class="v-bar"></span>
+                <span class="v-bar"></span><span class="v-bar"></span><span class="v-bar"></span>
+                <span class="v-bar"></span><span class="v-bar"></span><span class="v-bar"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Progress Bar & Scrubbing -->
+          <div class="space-y-2 mb-6">
+            <div class="relative w-full h-2 bg-neutral-800 rounded-full cursor-pointer group" id="progress-container">
+              <div id="progress-bar" class="h-full bg-gradient-to-r from-amber-600 to-amber-400 rounded-full w-0 relative">
+                <span class="absolute right-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-white rounded-full shadow-md scale-0 group-hover:scale-100 transition-transform"></span>
+              </div>
+            </div>
+            <div class="flex justify-between text-xs font-mono text-neutral-400">
+              <span id="current-time">0:00</span>
+              <span id="total-duration">0:00</span>
+            </div>
+          </div>
+
+          <!-- Control Buttons -->
+          <div class="flex items-center justify-between">
+            
+            <!-- Volume Control -->
+            <div class="flex items-center gap-2 w-28">
+              <button id="mute-btn" class="text-neutral-400 hover:text-amber-400 text-sm focus:outline-none" aria-label="Stummschalten">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+              <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="0.85" class="w-full h-1 bg-neutral-800 accent-amber-500 rounded-lg cursor-pointer">
+            </div>
+
+            <!-- Playback Controls -->
+            <div class="flex items-center gap-4">
+              <button id="prev-btn" class="text-neutral-400 hover:text-amber-400 text-lg transition-colors p-2" aria-label="Vorheriger Track">
+                <i class="fa-solid fa-backward-step"></i>
+              </button>
+              
+              <button id="play-btn" class="w-14 h-14 rounded-full bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-neutral-950 text-xl flex items-center justify-center shadow-lg shadow-amber-600/30 hover:scale-105 transition-all duration-300" aria-label="Abspielen / Pausieren">
+                <i id="play-icon" class="fa-solid fa-play ml-0.5"></i>
+              </button>
+              
+              <button id="next-btn" class="text-neutral-400 hover:text-amber-400 text-lg transition-colors p-2" aria-label="Nächster Track">
+                <i class="fa-solid fa-forward-step"></i>
+              </button>
+            </div>
+
+            <!-- Playlist Expand Trigger / Info -->
+            <div class="w-28 text-right">
+              <span class="text-xs text-neutral-500 font-mono">5 MP3 Tracks</span>
+            </div>
+
+          </div>
+
+          <!-- Playlist Items -->
+          <div class="mt-8 pt-6 border-t border-neutral-800 space-y-2" id="playlist">
+            <!-- Items injected by JS -->
+          </div>
+
+          <!-- Hidden Native Audio Element -->
+          <audio id="main-audio" preload="metadata"></audio>
+        </div>
+      </div>
+
+      <!-- Video Releases Grid (10 YouTube Clips) -->
+      <div class="mb-8 text-center">
+        <h3 class="font-montserrat font-bold text-2xl text-neutral-100 mb-2">Video Produktionen & Releases</h3>
+        <p class="text-xs uppercase tracking-widest text-amber-500 font-semibold mb-10">Offizielle YouTube Veröffentlichungen</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        
+        <!-- Video 1 -->
+        <div class="video-card bg-neutral-950 border border-neutral-800/80 rounded-2xl overflow-hidden shadow-xl hover:border-amber-600/40 transition-all duration-300">
+          <div class="aspect-video w-full bg-neutral-900">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/yHi-efkm4Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card bg-neutral-950 border border-neutral-800/80 rounded-2xl overflow-hidden shadow-xl hover:border-amber-600/40 transition-all duration-300">
+          <div class="aspect-video w-full bg-neutral-900">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/pl7Fb7HrzV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card bg-neutral-950 border border-neutral-800/80 rounded-2xl overflow-hidden shadow-xl hover:border-amber-600/40 transition-all duration-300">
+          <div class="aspect-video w-full bg-neutral-900">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/bnIlvuWF2E0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-card bg-neutral-950 border border-neutral-800/80 rounded-2xl overflow-hidden shadow-xl hover:border-amber-600/40 transition-all duration-300">
+          <div class="aspect-video w-full bg-neutral-900">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/R3hihXQe0io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="video-card bg-neutral-950 border border-neutral-800/80 rounded-2xl overflow-hidden shadow-xl hover:border-amber-600/40 transition-all duration-300">
+          <div class="aspect-video w-full bg-neutral-900">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/0G5-nRNUx-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Video 6 -->
+        <div class="video-card bg-neutral-950 border border-neutral-800/80 rounded-2xl overflow-hidden shadow-xl hover:border-amber-600/40 transition-all duration-300">
+          <div class="aspect-video w-full bg-neutral-900">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/0wWhnMbOC-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Video 7 -->
+        <div class="video-card bg-neutral-950 border border-neutral-800/80 rounded-2xl overflow-hidden shadow-xl hover:border-amber-600/40 transition-all duration-300">
+          <div class="aspect-video w-full bg-neutral-900">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/tcWHYf3ZhxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Video 8 -->
+        <div class="video-card bg-neutral-950 border border-neutral-800/80 rounded-2xl overflow-hidden shadow-xl hover:border-amber-600/40 transition-all duration-300">
+          <div class="aspect-video w-full bg-neutral-900">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/i9yWqh4WRPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Video 9 -->
+        <div class="video-card bg-neutral-950 border border-neutral-800/80 rounded-2xl overflow-hidden shadow-xl hover:border-amber-600/40 transition-all duration-300">
+          <div class="aspect-video w-full bg-neutral-900">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/WaQfrW35Rvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Video 10 -->
+        <div class="video-card bg-neutral-950 border border-neutral-800/80 rounded-2xl overflow-hidden shadow-xl hover:border-amber-600/40 transition-all duration-300">
+          <div class="aspect-video w-full bg-neutral-900">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/VmyC7gkS1TI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="relative py-24 bg-neutral-950 text-neutral-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center mb-16">
+        <h2 class="font-abril text-4xl sm:text-5xl md:text-6xl text-gold mb-3 tracking-widest">GALERIE</h2>
+        <div class="w-24 h-1 bg-amber-600/70 mx-auto rounded-full mb-4"></div>
+        <p class="text-neutral-400 font-montserrat text-sm sm:text-base">Einblicke in Tonstudio, Sessions und Audio-Hardware</p>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+        
+        <div class="gallery-item group relative aspect-square rounded-xl overflow-hidden bg-neutral-900 border border-neutral-800 cursor-pointer" data-img="assets/images/gallery_1_klavier.jpg" data-caption="vir2ose am Flügel & Klavier">
+          <img src="assets/images/gallery_1_klavier.jpg" alt="vir2ose Klavier" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="gallery-overlay absolute inset-0 bg-neutral-950/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+            <div>
+              <i class="fa-solid fa-magnifying-glass-plus text-amber-400 text-2xl mb-2"></i>
+              <p class="text-xs font-montserrat text-white font-medium">vir2ose Klavier</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative aspect-square rounded-xl overflow-hidden bg-neutral-900 border border-neutral-800 cursor-pointer" data-img="assets/images/gallery_2_3daudio.png" data-caption="3D Audio Technology Engineering">
+          <img src="assets/images/gallery_2_3daudio.png" alt="3D Audio Technology" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="gallery-overlay absolute inset-0 bg-neutral-950/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+            <div>
+              <i class="fa-solid fa-magnifying-glass-plus text-amber-400 text-2xl mb-2"></i>
+              <p class="text-xs font-montserrat text-white font-medium">3D Audio Technology</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative aspect-square rounded-xl overflow-hidden bg-neutral-900 border border-neutral-800 cursor-pointer" data-img="assets/images/gallery_3_producer.jpg" data-caption="Waldemar Krucinski - vir2ose Studio Producer">
+          <img src="assets/images/gallery_3_producer.jpg" alt="Producer vir2ose" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="gallery-overlay absolute inset-0 bg-neutral-950/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+            <div>
+              <i class="fa-solid fa-magnifying-glass-plus text-amber-400 text-2xl mb-2"></i>
+              <p class="text-xs font-montserrat text-white font-medium">Producer vir2ose</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative aspect-square rounded-xl overflow-hidden bg-neutral-900 border border-neutral-800 cursor-pointer" data-img="assets/images/gallery_4_banner_sw.jpg" data-caption="vir2ose Studio Session Banner">
+          <img src="assets/images/gallery_4_banner_sw.jpg" alt="Banner vir2ose SW" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="gallery-overlay absolute inset-0 bg-neutral-950/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+            <div>
+              <i class="fa-solid fa-magnifying-glass-plus text-amber-400 text-2xl mb-2"></i>
+              <p class="text-xs font-montserrat text-white font-medium">Studio Session</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative aspect-square rounded-xl overflow-hidden bg-neutral-900 border border-neutral-800 cursor-pointer" data-img="assets/images/gallery_5_mindful.jpg" data-caption="Mindful Audio & Music Creation">
+          <img src="assets/images/gallery_5_mindful.jpg" alt="Mindful" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="gallery-overlay absolute inset-0 bg-neutral-950/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+            <div>
+              <i class="fa-solid fa-magnifying-glass-plus text-amber-400 text-2xl mb-2"></i>
+              <p class="text-xs font-montserrat text-white font-medium">Mindful Music</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative aspect-square rounded-xl overflow-hidden bg-neutral-900 border border-neutral-800 cursor-pointer" data-img="assets/images/gallery_6_sw_kopie.jpg" data-caption="vir2ose Portrait Studio">
+          <img src="assets/images/gallery_6_sw_kopie.jpg" alt="vir2ose Portrait" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="gallery-overlay absolute inset-0 bg-neutral-950/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+            <div>
+              <i class="fa-solid fa-magnifying-glass-plus text-amber-400 text-2xl mb-2"></i>
+              <p class="text-xs font-montserrat text-white font-medium">vir2ose Portrait</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative aspect-square rounded-xl overflow-hidden bg-neutral-900 border border-neutral-800 cursor-pointer" data-img="assets/images/gallery_7_studio_2019.jpg" data-caption="Studio Live Session 2019">
+          <img src="assets/images/gallery_7_studio_2019.jpg" alt="Studio Session 2019" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="gallery-overlay absolute inset-0 bg-neutral-950/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+            <div>
+              <i class="fa-solid fa-magnifying-glass-plus text-amber-400 text-2xl mb-2"></i>
+              <p class="text-xs font-montserrat text-white font-medium">Studio Live 2019</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative aspect-square rounded-xl overflow-hidden bg-neutral-900 border border-neutral-800 cursor-pointer" data-img="assets/images/gallery_8_gear_2021.jpg" data-caption="Modular Gear & Synthesizer Setup 2021">
+          <img src="assets/images/gallery_8_gear_2021.jpg" alt="Synthesizer Gear" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="gallery-overlay absolute inset-0 bg-neutral-950/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+            <div>
+              <i class="fa-solid fa-magnifying-glass-plus text-amber-400 text-2xl mb-2"></i>
+              <p class="text-xs font-montserrat text-white font-medium">Modular Studio Gear</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox Modal for Gallery -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-neutral-950/95 backdrop-blur-xl hidden flex items-center justify-center p-4">
+    <button id="lightbox-close" class="absolute top-6 right-6 text-neutral-400 hover:text-white text-3xl focus:outline-none p-2" aria-label="Schließen">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    
+    <button id="lightbox-prev" class="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-amber-400 text-3xl p-3 focus:outline-none" aria-label="Vorheriges Bild">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    
+    <div class="max-w-4xl max-h-[85vh] flex flex-col items-center">
+      <img id="lightbox-img" src="" alt="Fullscreen View" class="max-w-full max-h-[75vh] object-contain rounded-lg shadow-2xl border border-neutral-800">
+      <p id="lightbox-caption" class="text-sm font-montserrat text-neutral-300 mt-4 text-center"></p>
+    </div>
+
+    <button id="lightbox-next" class="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-amber-400 text-3xl p-3 focus:outline-none" aria-label="Nächstes Bild">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <!-- Partners & Streaming Section -->
+  <section id="partners" class="relative py-24 bg-neutral-900/40 text-neutral-100 border-t border-neutral-800/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center mb-16">
+        <h2 class="font-abril text-4xl sm:text-5xl md:text-6xl text-gold mb-3 tracking-widest">Partner</h2>
+        <div class="w-24 h-1 bg-amber-600/70 mx-auto rounded-full mb-4"></div>
+        <p class="text-neutral-400 font-montserrat text-sm sm:text-base">Streaming-Plattformen, Bands, Künstler & Kooperationen</p>
+      </div>
+
+      <!-- Partner Buttons Flex Grid -->
+      <div class="flex flex-wrap justify-center items-center gap-3 sm:gap-4 max-w-5xl mx-auto">
+        
+        <a href="https://artists.spotify.com/c/de/artist/2gtTCGCWqOrwpFXqicOF7s/profile/overview" target="_blank" class="partner-btn">
+          <i class="fa-brands fa-spotify text-emerald-400"></i> Spotify Artists
+        </a>
+
+        <a href="https://music.apple.com/us/album/in-my-head-single/1771089828" target="_blank" class="partner-btn">
+          <i class="fa-brands fa-apple text-neutral-200"></i> Apple Music
+        </a>
+
+        <a href="https://www.deezer.com/de/album/648186531" target="_blank" class="partner-btn">
+          <i class="fa-brands fa-deezer text-amber-400"></i> DEEZER
+        </a>
+
+        <a href="https://web.tunecore.de/discography" target="_blank" class="partner-btn">
+          <i class="fa-solid fa-music text-blue-400"></i> TUNECORE
+        </a>
+
+        <a href="https://distrokid.com/mymusic/" target="_blank" class="partner-btn">
+          <i class="fa-solid fa-circle-play text-cyan-400"></i> DISTROKID
+        </a>
+
+        <a href="https://rockpiano.de/" target="_blank" class="partner-btn">
+          <i class="fa-solid fa-star text-amber-500"></i> André Rössig - Rockpiano
+        </a>
+
+        <a href="https://rockpiano.de/live-musik-entertainment/caleidio/" target="_blank" class="partner-btn">
+          <i class="fa-solid fa-star text-amber-500"></i> Caleidio
+        </a>
+
+        <a href="https://endofvision.jimdosite.com/" target="_blank" class="partner-btn">
+          <i class="fa-solid fa-star text-amber-500"></i> End Of Vision
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100064712227268" target="_blank" class="partner-btn">
+          <i class="fa-solid fa-star text-amber-500"></i> VISIonAIR
+        </a>
+
+        <a href="https://www.youtube.com/@WaldemarKrucinski" target="_blank" class="partner-btn">
+          <i class="fa-brands fa-youtube text-red-500"></i> Relaxing Music
+        </a>
+
+        <a href="https://www.instagram.com/raykuba_oficial/" target="_blank" class="partner-btn">
+          <i class="fa-brands fa-instagram text-pink-500"></i> Raykuba
+        </a>
+
+        <a href="https://promodj.com/othello" target="_blank" class="partner-btn">
+          <i class="fa-solid fa-headphones text-amber-400"></i> DJ Othello
+        </a>
+
+        <a href="https://www.facebook.com/p/Simply-Dry-100063446214868/?locale=de_DE" target="_blank" class="partner-btn">
+          <i class="fa-solid fa-star text-amber-500"></i> Simply Dry
+        </a>
+
+        <a href="https://www.youtube.com/@renatamickiewicz-krucinski" target="_blank" class="partner-btn">
+          <i class="fa-brands fa-youtube text-red-500"></i> ReMiK
+        </a>
+
+        <a href="https://www.facebook.com/THEBIGOS" target="_blank" class="partner-btn">
+          <i class="fa-solid fa-star text-amber-500"></i> THE BIGOS
+        </a>
+
+        <a href="https://de.fiverr.com/vir2ose?up_rollout=true" target="_blank" class="partner-btn">
+          <i class="fa-solid fa-handshake text-emerald-400"></i> Fiverr Studio Services
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Stay Tuned / Contact Section -->
+  <section id="contact" class="relative py-24 bg-neutral-950 text-neutral-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <!-- Section Title -->
+      <div class="text-center mb-16">
+        <h2 class="font-abril text-4xl sm:text-5xl md:text-6xl text-gold mb-3 tracking-widest">S T A Y&nbsp; T U N E D</h2>
+        <div class="w-24 h-1 bg-amber-600/70 mx-auto rounded-full mb-6"></div>
+        <p class="text-neutral-400 font-montserrat text-sm sm:text-base">Abonniere Neuigkeiten oder nimm direkt Kontakt mit Waldemar Krucinski auf</p>
+      </div>
+
+      <!-- Contact & Newsletter Box -->
+      <div class="bg-neutral-900/70 border border-neutral-800 rounded-3xl p-8 sm:p-12 shadow-2xl backdrop-blur-md">
+        
+        <!-- Newsletter Form -->
+        <form id="newsletter-form" class="space-y-4 max-w-xl mx-auto mb-10">
+          <div>
+            <label for="sub-name" class="block text-xs font-montserrat uppercase tracking-wider text-neutral-400 mb-1.5">Dein Name</label>
+            <input type="text" id="sub-name" required placeholder="Vollständiger Name" class="w-full px-4 py-3.5 rounded-xl bg-neutral-950/80 border border-neutral-700 text-neutral-100 placeholder-neutral-500 focus:outline-none focus:border-amber-500 transition-colors text-sm">
+          </div>
+          
+          <div>
+            <label for="sub-email" class="block text-xs font-montserrat uppercase tracking-wider text-neutral-400 mb-1.5">Deine E-Mail-Adresse</label>
+            <input type="email" id="sub-email" required placeholder="name@beispiel.de" class="w-full px-4 py-3.5 rounded-xl bg-neutral-950/80 border border-neutral-700 text-neutral-100 placeholder-neutral-500 focus:outline-none focus:border-amber-500 transition-colors text-sm">
+          </div>
+
+          <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-neutral-950 font-montserrat font-bold text-sm tracking-wider uppercase transition-all duration-300 shadow-lg shadow-amber-600/20">
+            Abonnieren
+          </button>
+          
+          <div id="form-feedback" class="hidden p-4 rounded-xl text-center text-xs font-medium"></div>
+        </form>
+
+        <!-- Direct Email / Contact Actions -->
+        <div class="pt-8 border-t border-neutral-800 text-center space-y-6">
+          <p class="text-sm text-neutral-400 font-light">Oder schreibe mir direkt für Studio-Anfragen, Mixes & Produktionen:</p>
+          
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="mailto:info@waldemar-krucinski.com" class="px-8 py-3.5 rounded-full bg-neutral-800 hover:bg-amber-600 text-neutral-100 hover:text-white font-montserrat font-semibold text-sm flex items-center gap-2 border border-neutral-700 hover:border-amber-500 transition-all duration-300">
+              <i class="fa-solid fa-envelope text-amber-400"></i> Schreib mir eine E-Mail
+            </a>
+            
+            <a href="https://wa.me/+491707444776" target="_blank" class="px-8 py-3.5 rounded-full bg-neutral-800 hover:bg-emerald-600 text-neutral-100 hover:text-white font-montserrat font-semibold text-sm flex items-center gap-2 border border-neutral-700 hover:border-emerald-500 transition-all duration-300">
+              <i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp Chat
+            </a>
+          </div>
+
+          <!-- Quick Social Row -->
+          <div class="flex items-center justify-center gap-4 pt-4">
+            <a href="https://www.facebook.com/waldemar.krucinski" target="_blank" aria-label="Facebook" class="social-icon-btn hover:bg-blue-600 hover:text-white">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCMsdQBpGOAY5wGFgA34T5mg" target="_blank" aria-label="YouTube" class="social-icon-btn hover:bg-red-600 hover:text-white">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://wa.me/+491707444776" target="_blank" aria-label="WhatsApp" class="social-icon-btn hover:bg-emerald-600 hover:text-white">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-950 border-t border-neutral-900 py-12 text-neutral-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo.jpg" alt="vir2ose" class="w-8 h-8 rounded-full border border-amber-600/40">
+        <span class="font-montserrat font-bold text-neutral-200">vir2ose</span>
+        <span class="text-xs text-neutral-500">| Tonstudio Hannover</span>
+      </div>
+
+      <div class="text-center text-xs text-neutral-400">
+        © 2026 Alle Rechte vorbehalten - <span class="text-neutral-200">Waldemar Krucinski</span>
+      </div>
+
+      <div class="flex items-center gap-4 text-xs">
+        <a href="#hero" class="text-neutral-400 hover:text-amber-400 transition-colors flex items-center gap-1">
+          Nach oben <i class="fa-solid fa-arrow-up text-[10px]"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Tailwind CSS CDN for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            abril: ['"Abril Fatface"', 'serif'],
+            montserrat: ['Montserrat', 'sans-serif'],
+            roboto: ['Roboto', 'sans-serif'],
+          },
+          colors: {
+            gold: '#a47d51',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Scripts -->
+  <script src="player.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
