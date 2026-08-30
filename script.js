@@ -100,27 +100,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. Newsletter & Contact Form Simulation
-  const newsletterForm = document.getElementById('newsletter-form');
-  const formFeedback = document.getElementById('form-feedback');
-
-  if (newsletterForm && formFeedback) {
-    newsletterForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = document.getElementById('sub-name').value.trim();
-      const email = document.getElementById('sub-email').value.trim();
-
-      if (!name || !email) return;
-
-      formFeedback.className = 'p-4 rounded-xl text-center text-xs font-medium bg-[#928f51]/15 border border-[#928f51]/40 text-[#d6c587] block animate-fade-in';
-      formFeedback.innerHTML = `Vielen Dank, <strong>${name}</strong>! Deine Anmeldung (${email}) wurde erfolgreich übermittelt.`;
-
-      newsletterForm.reset();
-
-      setTimeout(() => {
-        formFeedback.classList.add('hidden');
-      }, 6000);
-    });
-  }
-
+  // Lightbox keyboard navigation ends
 });
