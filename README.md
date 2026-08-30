@@ -23,7 +23,7 @@ Fundierte musikalische Ausbildung kombiniert mit moderner Tonstudiotechnik und S
 
 ---
 
-## 🚀 Website Features & Tech-Stack
+## Website Features & Tech-Stack
 
 * **High-End Studio Design:** Dark/Gold-Ästhetik (`#a47d51`, `#d4af37`) mit Glassmorphism-Effekten, voll responsiv.
 * **Custom Web-Audio-Engine:** Integrierter HTML5/JS-Audioplayer mit VU-Visualizer, Scrubbing-Timeline und lokaler verlustfreier Track-Wiedergabe.
