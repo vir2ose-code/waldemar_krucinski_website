@@ -18,9 +18,14 @@
   <meta property="og:description" content="Professionelle Musikproduktionen, Audiobearbeitungen und Sounddesign bei dem Musikproduzenten vir2ose im Tonstudio in Hannover.">
   <meta property="og:image" content="assets/images/logo.jpg">
 
-  <!-- Favicon -->
+  <!-- Favicon & Mobile Icons -->
   <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
   <link rel="apple-touch-icon" href="assets/images/logo.jpg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -200,13 +205,13 @@
   <!-- Hero Section -->
   <section id="hero" class="relative min-h-screen flex items-center justify-start pt-28 pb-20 overflow-hidden hero-bg">
     
-    <!-- Transparent Soft Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-r from-neutral-950/85 via-neutral-950/35 to-transparent z-0"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-neutral-950/30 via-transparent to-neutral-950/90 z-0"></div>
+    <!-- Transparent Soft Overlay (Responsive contrast for Smartphones, Tablets & Desktop) -->
+    <div class="absolute inset-0 bg-gradient-to-r from-neutral-950/95 via-neutral-950/75 to-neutral-950/30 sm:from-neutral-950/85 sm:via-neutral-950/35 sm:to-transparent z-0"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-neutral-950/40 via-transparent to-neutral-950/90 z-0"></div>
 
     <div class="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Left-aligned content block over the brick wall -->
+      <!-- Left-aligned content block over the brick wall with soft mobile backdrop -->
       <div class="max-w-md lg:max-w-lg text-left">
         
         <!-- Studio Badge (Almost square with minimal 4px corners) -->
@@ -217,12 +222,12 @@
         </a>
 
         <!-- Main Headline in Real Gold Metallic with Glanz -->
-        <h1 class="font-montserrat font-extrabold text-3xl sm:text-4xl lg:text-5xl gold-metallic-text tracking-tight leading-tight mb-6">
+        <h1 class="font-montserrat font-extrabold text-2xl sm:text-4xl lg:text-5xl gold-metallic-text tracking-tight leading-tight mb-5 drop-shadow-lg">
           Songwriting, Sounddesign und Musikproduktion in Hannover
         </h1>
 
         <!-- Subheadline -->
-        <p class="font-roboto font-light text-base sm:text-lg text-neutral-200 mb-10 leading-relaxed drop-shadow-md">
+        <p class="font-roboto font-light text-sm sm:text-base lg:text-lg text-neutral-200 mb-8 sm:mb-10 leading-relaxed drop-shadow-md">
           Professionelle Musikproduktionen, Audiobearbeitungen und Sounddesign im Tonstudio <span class="text-[#d6c587] font-medium">vir2ose</span> in Hannover
         </p>
 

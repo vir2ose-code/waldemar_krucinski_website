@@ -107,7 +107,7 @@
   transform: translateX(4px);
 }
 
-/* Hero Background - Zoomed out and shifted accurately to the right side */
+/* Hero Background - Zoomed out and shifted accurately to the right side with refined Mobile & Tablet Breakpoints */
 .hero-bg {
   background-image: url('assets/images/banner_hero.jpg');
   background-size: cover;
@@ -127,14 +127,32 @@
 @media (max-width: 1024px) {
   .hero-bg {
     background-attachment: scroll;
-    background-position: 90% center;
+    background-position: 85% center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-bg {
+    background-attachment: scroll;
+    background-position: 78% 25%;
     background-size: cover;
   }
 }
 
 @media (max-width: 640px) {
   .hero-bg {
-    background-position: 80% center;
+    background-attachment: scroll;
+    background-position: 74% 20%;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-bg {
+    background-attachment: scroll;
+    background-position: 72% 15%;
+    background-size: cover;
   }
 }
 

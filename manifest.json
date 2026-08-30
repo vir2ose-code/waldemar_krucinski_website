@@ -1,0 +1,22 @@
+﻿{
+  "name": "vir2ose - Waldemar Krucinski",
+  "short_name": "vir2ose",
+  "description": "Songwriting, Sounddesign und Musikproduktion in Hannover | Waldemar Krucinski (vir2ose)",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#928f51",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/images/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/images/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
