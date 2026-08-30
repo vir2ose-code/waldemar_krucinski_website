@@ -100,49 +100,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. Asynchronous MailerLite Newsletter Submission via Fetch
+  // 4. MailerLite Seamless Hidden Iframe Submission (Bypasses CORS, No Redirects)
   const newsletterForm = document.getElementById('newsletter-form');
+  const newsletterFields = document.getElementById('newsletter-fields');
+  const newsletterSuccess = document.getElementById('newsletter-success');
 
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      
-      const submitBtn = newsletterForm.querySelector('button[type="submit"]');
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Wird übermittelt...';
-      }
-
-      const formData = new FormData(newsletterForm);
-      const actionUrl = newsletterForm.getAttribute('action');
-
-      const renderSuccessMessage = () => {
-        newsletterForm.innerHTML = `
-          <div class="p-8 rounded-lg bg-neutral-950/90 border-2 border-[#928f51] text-center shadow-2xl space-y-4 animate-fade-in">
-            <div class="w-14 h-14 rounded-full bg-[#928f51]/20 text-[#d6c587] flex items-center justify-center text-2xl mx-auto border border-[#928f51]/60 shadow-lg shadow-[#928f51]/10">
-              <i class="fa-solid fa-circle-check"></i>
-            </div>
-            <h4 class="font-montserrat font-extrabold text-xl text-neutral-100 gold-metallic-text tracking-tight">
-              Vielen Dank für dein Abonnement!
-            </h4>
-            <p class="text-sm text-neutral-300 font-light leading-relaxed max-w-md mx-auto">
-              Bitte prüfe dein E-Mail-Postfach zur Bestätigung.
-            </p>
-          </div>
-        `;
-      };
-
-      try {
-        await fetch(actionUrl, {
-          method: 'POST',
-          body: formData,
-          mode: 'no-cors'
-        });
-        renderSuccessMessage();
-      } catch (err) {
-        console.warn('Fetch submission notice:', err);
-        renderSuccessMessage();
-      }
+  if (newsletterForm && newsletterFields && newsletterSuccess) {
+    newsletterForm.addEventListener('submit', () => {
+      // Immediate in-place transition to gold success message while browser posts in background iframe
+      newsletterFields.style.display = 'none';
+      newsletterSuccess.classList.remove('hidden');
     });
   }
 
