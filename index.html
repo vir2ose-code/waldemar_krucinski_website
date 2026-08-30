@@ -35,7 +35,7 @@
 </head>
 <body class="bg-neutral-950 text-neutral-100 font-roboto antialiased selection:bg-[#928f51] selection:text-neutral-950">
 
-  <!-- Navigation Header (Glassy with soft golden dust edge, no hard lines) -->
+  <!-- Navigation Header -->
   <header id="main-header" class="fixed top-0 left-0 w-full z-50 glass-header">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
@@ -48,7 +48,7 @@
         </div>
       </a>
 
-      <!-- Desktop Navigation Menu -->
+      <!-- Desktop Navigation Menu (Left/Center) -->
       <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 font-montserrat text-sm font-semibold">
         <a href="#bio" class="nav-link px-3 py-2 text-neutral-300 hover:text-[#d6c587] transition-colors">Bio</a>
         <a href="#listen" class="nav-link px-3 py-2 text-neutral-300 hover:text-[#d6c587] transition-colors">Hören</a>
@@ -57,25 +57,76 @@
         <a href="#contact" class="nav-link px-3 py-2 text-neutral-300 hover:text-[#d6c587] transition-colors">Kontakt</a>
       </nav>
 
-      <!-- Header Action Quicklinks -->
-      <div class="hidden lg:flex items-center gap-3">
-        <!-- Subdomain Badges -->
-        <a href="https://plugins.waldemar-krucinski.com" target="_blank" class="px-3 py-1.5 rounded-full text-xs font-semibold bg-[#928f51]/15 text-[#d6c587] border border-[#928f51]/40 hover:bg-[#928f51] hover:text-neutral-950 transition-all flex items-center gap-1.5 shadow-sm">
-          <i class="fa-solid fa-sliders"></i> Plugins
-        </a>
-        <a href="https://radio.waldemar-krucinski.com" target="_blank" class="px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500 hover:text-neutral-950 transition-all flex items-center gap-1.5 shadow-sm">
-          <i class="fa-solid fa-radio"></i> Radio FM
-        </a>
+      <!-- Header Top Right Text Navigation: Web Radio, PlugIns, Apps -->
+      <div class="hidden lg:flex items-center gap-6 font-montserrat text-sm font-semibold">
         
-        <!-- SoundCloud -->
-        <a href="https://soundcloud.com/waldemar-krucinski" target="_blank" aria-label="SoundCloud" class="w-9 h-9 rounded-full bg-neutral-900 border border-[#928f51]/30 hover:bg-[#928f51] text-neutral-300 hover:text-neutral-950 flex items-center justify-center transition-all duration-300">
-          <i class="fa-brands fa-soundcloud text-base"></i>
+        <!-- Web Radio Link -->
+        <a href="https://radio.waldemar-krucinski.com" target="_blank" class="text-neutral-200 hover:text-[#d6c587] transition-colors flex items-center gap-1.5 group">
+          <span>Web Radio</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-[#928f51] opacity-70 group-hover:opacity-100"></i>
         </a>
-        
-        <!-- Phone -->
-        <a href="tel:+491707444776" class="px-3.5 py-1.5 rounded-full bg-neutral-900 hover:bg-[#928f51] text-neutral-200 hover:text-neutral-950 text-xs font-medium flex items-center gap-2 border border-[#928f51]/40 transition-all">
-          <i class="fa-solid fa-phone text-[#d6c587]"></i> +49 170 7444776
+
+        <!-- PlugIns Link -->
+        <a href="https://plugins.waldemar-krucinski.com" target="_blank" class="text-neutral-200 hover:text-[#d6c587] transition-colors flex items-center gap-1.5 group">
+          <span>PlugIns</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-[#928f51] opacity-70 group-hover:opacity-100"></i>
         </a>
+
+        <!-- Apps Dropdown -->
+        <div class="apps-dropdown">
+          <button class="text-neutral-200 hover:text-[#d6c587] transition-colors flex items-center gap-1.5 py-2 focus:outline-none cursor-pointer" aria-expanded="false" aria-haspopup="true">
+            <span>Apps</span>
+            <i class="fa-solid fa-chevron-down text-xs text-[#928f51]"></i>
+          </button>
+          
+          <!-- Dropdown Menu -->
+          <div class="apps-dropdown-menu">
+            <div class="px-2 py-1 mb-1 border-b border-neutral-800 text-[11px] font-mono uppercase tracking-wider text-[#928f51]">
+              vir2ose Software & Web Apps
+            </div>
+            
+            <a href="https://www.goldenmirror.online/" target="_blank" class="apps-dropdown-item">
+              <div class="w-8 h-8 rounded-lg bg-[#928f51]/20 text-[#d6c587] flex items-center justify-center text-sm shrink-0">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-xs font-bold text-neutral-100">Golden Mirror Studio</span>
+                <span class="text-[11px] text-neutral-400 font-normal">AI Prompt & Sound Engine</span>
+              </div>
+            </a>
+
+            <a href="https://www.numeronarracje.com/" target="_blank" class="apps-dropdown-item">
+              <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center text-sm shrink-0">
+                <i class="fa-solid fa-star-of-life"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-xs font-bold text-neutral-100">Numeronarracje</span>
+                <span class="text-[11px] text-neutral-400 font-normal">Numerologie & Horoskop App</span>
+              </div>
+            </a>
+
+            <a href="https://www.auraq-relaxing.com/" target="_blank" class="apps-dropdown-item">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-300 flex items-center justify-center text-sm shrink-0">
+                <i class="fa-solid fa-spa"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-xs font-bold text-neutral-100">AURAQ Relaxing</span>
+                <span class="text-[11px] text-neutral-400 font-normal">Sphärische Musik & Meditation</span>
+              </div>
+            </a>
+
+            <a href="https://little-guitar-academy.com/" target="_blank" class="apps-dropdown-item">
+              <div class="w-8 h-8 rounded-lg bg-pink-500/20 text-pink-400 flex items-center justify-center text-sm shrink-0">
+                <i class="fa-solid fa-guitar"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-xs font-bold text-neutral-100">Little Guitar Academy</span>
+                <span class="text-[11px] text-neutral-400 font-normal">Interaktive Gitarren-Schule</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
       </div>
 
       <!-- Mobile Hamburger Button -->
@@ -95,15 +146,37 @@
       <a href="#partners" class="block text-base font-semibold text-neutral-200 hover:text-[#d6c587] mobile-nav-link">Partner</a>
       <a href="#contact" class="block text-base font-semibold text-neutral-200 hover:text-[#d6c587] mobile-nav-link">Kontakt & Newsletter</a>
       
-      <div class="pt-4 border-t border-neutral-800 flex flex-wrap gap-2">
-        <a href="https://plugins.waldemar-krucinski.com" target="_blank" class="px-3 py-1.5 rounded-full text-xs font-semibold bg-[#928f51]/20 text-[#d6c587] border border-[#928f51]/40 flex items-center gap-1.5">
-          <i class="fa-solid fa-sliders"></i> Plugin Shop
+      <div class="pt-4 border-t border-neutral-800 space-y-2">
+        <div class="text-xs uppercase font-mono tracking-wider text-[#928f51] mb-1">Websites & Apps</div>
+        
+        <a href="https://radio.waldemar-krucinski.com" target="_blank" class="flex items-center justify-between p-2 rounded-lg bg-neutral-900 text-neutral-200 hover:text-[#d6c587] text-sm">
+          <span>Web Radio</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs text-[#928f51]"></i>
         </a>
-        <a href="https://radio.waldemar-krucinski.com" target="_blank" class="px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 flex items-center gap-1.5">
-          <i class="fa-solid fa-radio"></i> ART RADIO
+
+        <a href="https://plugins.waldemar-krucinski.com" target="_blank" class="flex items-center justify-between p-2 rounded-lg bg-neutral-900 text-neutral-200 hover:text-[#d6c587] text-sm">
+          <span>PlugIns</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs text-[#928f51]"></i>
         </a>
-        <a href="tel:+491707444776" class="px-3 py-1.5 rounded-full text-xs font-semibold bg-neutral-800 text-neutral-200 flex items-center gap-1.5 border border-[#928f51]/30">
-          <i class="fa-solid fa-phone text-[#d6c587]"></i> Anrufen
+
+        <a href="https://www.goldenmirror.online/" target="_blank" class="flex items-center justify-between p-2 rounded-lg bg-neutral-900 text-neutral-200 hover:text-[#d6c587] text-sm">
+          <span>Golden Mirror Studio (AI Sound)</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs text-[#928f51]"></i>
+        </a>
+
+        <a href="https://www.numeronarracje.com/" target="_blank" class="flex items-center justify-between p-2 rounded-lg bg-neutral-900 text-neutral-200 hover:text-[#d6c587] text-sm">
+          <span>Numeronarracje</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs text-[#928f51]"></i>
+        </a>
+
+        <a href="https://www.auraq-relaxing.com/" target="_blank" class="flex items-center justify-between p-2 rounded-lg bg-neutral-900 text-neutral-200 hover:text-[#d6c587] text-sm">
+          <span>AURAQ Relaxing</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs text-[#928f51]"></i>
+        </a>
+
+        <a href="https://little-guitar-academy.com/" target="_blank" class="flex items-center justify-between p-2 rounded-lg bg-neutral-900 text-neutral-200 hover:text-[#d6c587] text-sm">
+          <span>Little Guitar Academy</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs text-[#928f51]"></i>
         </a>
       </div>
     </div>
@@ -121,10 +194,12 @@
       <!-- Left-aligned content block over the brick wall -->
       <div class="max-w-md lg:max-w-lg text-left">
         
-        <!-- Studio Badge -->
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-neutral-950/80 border border-[#928f51]/50 text-[#d6c587] text-xs font-montserrat uppercase tracking-widest mb-6 backdrop-blur-md">
-          <i class="fa-solid fa-compact-disc text-[#928f51]"></i> Studio vir2ose • Hannover
-        </div>
+        <!-- Studio Badge Linked directly to Golden Mirror Online App -->
+        <a href="https://www.goldenmirror.online/" target="_blank" class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-neutral-950/80 border border-[#928f51]/60 hover:border-[#928f51] hover:bg-[#928f51]/20 text-[#d6c587] hover:text-white text-xs font-montserrat uppercase tracking-widest mb-6 backdrop-blur-md transition-all duration-300 shadow-md group">
+          <i class="fa-solid fa-compact-disc text-[#928f51] group-hover:rotate-180 transition-transform duration-500"></i> 
+          <span>Studio vir2ose • Hannover</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-[#928f51] ml-0.5 opacity-70 group-hover:opacity-100"></i>
+        </a>
 
         <!-- Main Headline in Real Gold Metallic with Glanz -->
         <h1 class="font-montserrat font-extrabold text-3xl sm:text-4xl lg:text-5xl gold-metallic-text tracking-tight leading-tight mb-6">
@@ -221,45 +296,103 @@
           </p>
 
           <div class="pt-4 border-t border-neutral-800 text-neutral-200 font-normal">
-            Was einst mit Kooperationen in der Region Hannover begann, hat sich mittlerweile zu einem breiten kreativen Spektrum entwickelt, das weltweite Musikproduktionen, Audio-Software-Entwicklung und -Kooperationen in unterschiedlichsten Genres umfasst.
+            Was einst mit Kooperationen in der Region Hannover begann, hat sich mittlerweile zu einem breiten kreativen Spektrum entwickelt, das weltweite Musikproduktionen, Audio-Software-Entwicklung, innovative AI Sound Engines und Web-Apps umfasst.
           </div>
         </div>
 
-        <!-- Ecosystem Hub Highlights inside Bio -->
-        <div class="mt-12 pt-8 border-t border-neutral-800 grid grid-cols-1 md:grid-cols-2 gap-6">
-          
-          <!-- Plugin Card -->
-          <div class="bg-neutral-950/80 border border-[#928f51]/30 hover:border-[#928f51] rounded-xl p-6 transition-all duration-300 group shadow-lg">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="w-10 h-10 rounded-lg bg-[#928f51]/15 text-[#d6c587] flex items-center justify-center text-lg">
-                <i class="fa-solid fa-sliders"></i>
-              </div>
-              <div>
-                <h4 class="font-montserrat font-bold text-neutral-100 group-hover:text-[#d6c587] transition-colors">vir2ose Audio Plugins</h4>
-                <p class="text-xs text-neutral-400">VPPEQ-1, VDC 2.0 & VFPA 1.0 DSP</p>
-              </div>
-            </div>
-            <p class="text-xs text-neutral-400 mb-4">Professionelle C++ JUCE DSP Audio-Plugins für Mixing, Mastering & Sounddesign.</p>
-            <a href="https://plugins.waldemar-krucinski.com" target="_blank" class="inline-flex items-center gap-2 text-xs font-semibold text-[#d6c587] hover:text-white">
-              Zum Plugin Store <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-            </a>
+        <!-- Ecosystem Hub Highlights inside Bio (Apps & Software Grid) -->
+        <div class="mt-12 pt-8 border-t border-neutral-800">
+          <div class="text-center mb-6">
+            <span class="text-xs font-mono uppercase tracking-widest text-[#928f51]">vir2ose Digital Ecosystem</span>
+            <h3 class="font-montserrat font-bold text-xl text-neutral-100 mt-1">Software, PlugIns & Web-Apps</h3>
           </div>
 
-          <!-- Radio Card -->
-          <div class="bg-neutral-950/80 border border-emerald-500/20 hover:border-emerald-500/60 rounded-xl p-6 transition-all duration-300 group shadow-lg">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg">
-                <i class="fa-solid fa-radio"></i>
-              </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            
+            <!-- Plugin Card -->
+            <a href="https://plugins.waldemar-krucinski.com" target="_blank" class="bg-neutral-950/80 border border-[#928f51]/30 hover:border-[#928f51] rounded-xl p-5 transition-all duration-300 group shadow-lg flex flex-col justify-between">
               <div>
-                <h4 class="font-montserrat font-bold text-neutral-100 group-hover:text-emerald-400 transition-colors">ART RADIO fm</h4>
-                <p class="text-xs text-neutral-400">24/7 Virtuosen & Independent Artists</p>
+                <div class="flex items-center gap-3 mb-2">
+                  <div class="w-9 h-9 rounded-lg bg-[#928f51]/15 text-[#d6c587] flex items-center justify-center text-base">
+                    <i class="fa-solid fa-sliders"></i>
+                  </div>
+                  <h4 class="font-montserrat font-bold text-neutral-100 group-hover:text-[#d6c587] text-sm">vir2ose Plugins</h4>
+                </div>
+                <p class="text-xs text-neutral-400 mb-3">VPPEQ-1, VDC 2.0 & VFPA 1.0 C++ DSP Audio Plugins.</p>
               </div>
-            </div>
-            <p class="text-xs text-neutral-400 mb-4">Das moderne Webradio für virtuose Musik, Chillout, Klassik & innovative Sounds.</p>
-            <a href="https://radio.waldemar-krucinski.com" target="_blank" class="inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 hover:text-emerald-300">
-              Radio Live Stream starten <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+              <span class="text-[11px] font-semibold text-[#d6c587] flex items-center gap-1">Zum Plugin Store <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
             </a>
+
+            <!-- Radio Card -->
+            <a href="https://radio.waldemar-krucinski.com" target="_blank" class="bg-neutral-950/80 border border-emerald-500/20 hover:border-emerald-500/60 rounded-xl p-5 transition-all duration-300 group shadow-lg flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 mb-2">
+                  <div class="w-9 h-9 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-base">
+                    <i class="fa-solid fa-radio"></i>
+                  </div>
+                  <h4 class="font-montserrat font-bold text-neutral-100 group-hover:text-emerald-400 text-sm">ART RADIO fm</h4>
+                </div>
+                <p class="text-xs text-neutral-400 mb-3">24/7 Web-Radio für Virtuosen & Independent Artists.</p>
+              </div>
+              <span class="text-[11px] font-semibold text-emerald-400 flex items-center gap-1">Live Stream hören <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+            </a>
+
+            <!-- Golden Mirror App -->
+            <a href="https://www.goldenmirror.online/" target="_blank" class="bg-neutral-950/80 border border-[#928f51]/30 hover:border-[#928f51] rounded-xl p-5 transition-all duration-300 group shadow-lg flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 mb-2">
+                  <div class="w-9 h-9 rounded-lg bg-[#928f51]/20 text-[#d6c587] flex items-center justify-center text-base">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  </div>
+                  <h4 class="font-montserrat font-bold text-neutral-100 group-hover:text-[#d6c587] text-sm">Golden Mirror Studio</h4>
+                </div>
+                <p class="text-xs text-neutral-400 mb-3">AI Prompt & Sound Engine für Sounddesign & Beats.</p>
+              </div>
+              <span class="text-[11px] font-semibold text-[#d6c587] flex items-center gap-1">App öffnen <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+            </a>
+
+            <!-- Numeronarracje App -->
+            <a href="https://www.numeronarracje.com/" target="_blank" class="bg-neutral-950/80 border border-purple-500/20 hover:border-purple-500/60 rounded-xl p-5 transition-all duration-300 group shadow-lg flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 mb-2">
+                  <div class="w-9 h-9 rounded-lg bg-purple-500/15 text-purple-300 flex items-center justify-center text-base">
+                    <i class="fa-solid fa-star-of-life"></i>
+                  </div>
+                  <h4 class="font-montserrat font-bold text-neutral-100 group-hover:text-purple-300 text-sm">Numeronarracje</h4>
+                </div>
+                <p class="text-xs text-neutral-400 mb-3">Tägliche Numerologie, Schwingungen & Seelenplan.</p>
+              </div>
+              <span class="text-[11px] font-semibold text-purple-300 flex items-center gap-1">App starten <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+            </a>
+
+            <!-- Auraq Relaxing App -->
+            <a href="https://www.auraq-relaxing.com/" target="_blank" class="bg-neutral-950/80 border border-amber-500/20 hover:border-amber-500/60 rounded-xl p-5 transition-all duration-300 group shadow-lg flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 mb-2">
+                  <div class="w-9 h-9 rounded-lg bg-amber-500/15 text-amber-300 flex items-center justify-center text-base">
+                    <i class="fa-solid fa-spa"></i>
+                  </div>
+                  <h4 class="font-montserrat font-bold text-neutral-100 group-hover:text-amber-300 text-sm">AURAQ Relaxing</h4>
+                </div>
+                <p class="text-xs text-neutral-400 mb-3">Sphärische Musik, Frequenzen & Meditation.</p>
+              </div>
+              <span class="text-[11px] font-semibold text-amber-300 flex items-center gap-1">Meditation öffnen <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+            </a>
+
+            <!-- Little Guitar Academy -->
+            <a href="https://little-guitar-academy.com/" target="_blank" class="bg-neutral-950/80 border border-pink-500/20 hover:border-pink-500/60 rounded-xl p-5 transition-all duration-300 group shadow-lg flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 mb-2">
+                  <div class="w-9 h-9 rounded-lg bg-pink-500/15 text-pink-300 flex items-center justify-center text-base">
+                    <i class="fa-solid fa-guitar"></i>
+                  </div>
+                  <h4 class="font-montserrat font-bold text-neutral-100 group-hover:text-pink-300 text-sm">Little Guitar Academy</h4>
+                </div>
+                <p class="text-xs text-neutral-400 mb-3">Interaktive Gitarrenschule für Kinder & Einsteiger.</p>
+              </div>
+              <span class="text-[11px] font-semibold text-pink-300 flex items-center gap-1">Gitarren-Studio <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+            </a>
+
           </div>
 
         </div>

@@ -23,7 +23,7 @@
   background: #928f51;
 }
 
-/* Glassmorphic Header with Soft Golden Dust Edge (No Hard Border Lines) */
+/* Glassmorphic Header with Soft Golden Dust Edge */
 .glass-header {
   background: linear-gradient(180deg, rgba(8, 8, 8, 0.72) 0%, rgba(10, 10, 10, 0.45) 80%, rgba(10, 10, 10, 0.15) 100%);
   backdrop-filter: blur(16px);
@@ -58,6 +58,53 @@
   height: 2px;
   background: radial-gradient(ellipse at center, rgba(214, 197, 135, 0.65) 0%, rgba(146, 143, 81, 0.4) 45%, rgba(146, 143, 81, 0.1) 80%, transparent 100%);
   filter: blur(0.6px);
+}
+
+/* Apps Dropdown Menu */
+.apps-dropdown {
+  position: relative;
+}
+.apps-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 290px;
+  background: rgba(12, 12, 12, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(146, 143, 81, 0.35);
+  border-radius: 16px;
+  padding: 12px;
+  margin-top: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9), 0 0 20px rgba(146, 143, 81, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 60;
+}
+.apps-dropdown:hover .apps-dropdown-menu,
+.apps-dropdown:focus-within .apps-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.apps-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: #e5e5e5;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+.apps-dropdown-item:hover {
+  background: rgba(146, 143, 81, 0.15);
+  border-color: rgba(146, 143, 81, 0.3);
+  color: #d6c587;
+  transform: translateX(4px);
 }
 
 /* Hero Background - Zoomed out and shifted accurately to the right side */
