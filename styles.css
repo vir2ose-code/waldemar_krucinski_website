@@ -1,9 +1,11 @@
 /* Custom Global Styles for waldemar-krucinski.com (vir2ose) */
 
 :root {
-  --gold-primary: #a47d51;
-  --gold-light: #d4af37;
-  --gold-dark: #825f38;
+  --gold-primary: #928f51;
+  --gold-light: #d6c587;
+  --gold-highlight: #fff2ba;
+  --gold-dark: #5e5428;
+  --gold-shadow: rgba(146, 143, 81, 0.35);
 }
 
 /* Custom Scrollbar */
@@ -18,41 +20,51 @@
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #a47d51;
+  background: #928f51;
 }
 
 /* Hero Background */
 .hero-bg {
   background-image: url('assets/images/banner_hero.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: center right;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .hero-bg {
     background-attachment: scroll;
+    background-position: 70% center;
   }
+}
+
+/* Real Metallic Gold Effect with Contour & Glanz */
+.gold-metallic-text {
+  background: linear-gradient(180deg, #fff5cc 0%, #e0ce8c 22%, #b59f5b 45%, #928f51 54%, #6b5f2a 85%, #4a411a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 14px rgba(146, 143, 81, 0.35));
 }
 
 /* Gold Text Styling */
 .text-gold {
-  color: #a47d51;
-  text-shadow: 0 2px 10px rgba(164, 125, 81, 0.2);
+  color: #928f51;
 }
 
-/* CTA Gold Button */
+/* Gold Bevel & Relief Button with 54% Contour */
 .cta-gold-button {
-  background: linear-gradient(135deg, #d4af37 0%, #a47d51 100%);
-  color: #0a0a0a;
-  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+  background: linear-gradient(180deg, #e2d294 0%, #b8a364 25%, #928f51 54%, #6e642c 88%, #524a1f 100%);
+  color: #0d0d0d;
+  box-shadow: 0 4px 18px rgba(146, 143, 81, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.8), inset 0 -2px 3px rgba(0, 0, 0, 0.6);
+  border: 1px solid #cfbe77;
   position: relative;
   overflow: hidden;
 }
 .cta-gold-button:hover {
-  background: linear-gradient(135deg, #e5c158 0%, #b88d5e 100%);
-  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.45);
+  background: linear-gradient(180deg, #f0e2a8 0%, #c7b373 25%, #a3a05c 54%, #7d7232 88%, #5e5524 100%);
+  box-shadow: 0 6px 25px rgba(146, 143, 81, 0.65), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
 }
 
 /* Social Icon Buttons */
@@ -60,19 +72,21 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: rgba(38, 38, 38, 0.6);
-  border: 1px solid rgba(82, 82, 82, 0.5);
-  color: #d4d4d4;
+  background: rgba(23, 23, 23, 0.65);
+  border: 1px solid rgba(146, 143, 81, 0.35);
+  color: #e5e5e5;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
 }
 .social-icon-btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  border-color: transparent;
+  transform: translateY(-3px) scale(1.08);
+  border-color: #928f51;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(146, 143, 81, 0.4);
 }
 
 /* Partner Buttons */
@@ -83,22 +97,22 @@
   padding: 12px 22px;
   border-radius: 9999px;
   background: rgba(23, 23, 23, 0.8);
-  border: 1px solid rgba(64, 64, 64, 0.8);
+  border: 1px solid rgba(146, 143, 81, 0.35);
   color: #f5f5f5;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.03em;
   transition: all 0.3s ease;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 .partner-btn:hover {
-  background: #ffffff;
+  background: linear-gradient(180deg, #e2d294 0%, #928f51 54%, #5e5428 100%);
   color: #0a0a0a;
-  border-color: #ffffff;
+  border-color: #e2d294;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(146, 143, 81, 0.45);
 }
 .partner-btn:hover i {
   color: #0a0a0a !important;
@@ -108,7 +122,7 @@
 .v-bar {
   width: 3px;
   height: 4px;
-  background: #a47d51;
+  background: #928f51;
   border-radius: 2px;
   transition: height 0.15s ease;
 }
@@ -131,7 +145,7 @@
 
 @keyframes bounceBar {
   0%, 100% { height: 4px; }
-  50% { height: 22px; background: #f59e0b; }
+  50% { height: 22px; background: #d6c587; }
 }
 
 /* Playlist Item in Audio Player */
@@ -148,13 +162,13 @@
 }
 .playlist-item:hover {
   background: rgba(38, 38, 38, 0.7);
-  border-color: rgba(164, 125, 81, 0.3);
+  border-color: rgba(146, 143, 81, 0.3);
 }
 .playlist-item.active {
-  background: rgba(164, 125, 81, 0.15);
-  border-color: #a47d51;
+  background: rgba(146, 143, 81, 0.18);
+  border-color: #928f51;
 }
 .playlist-item.active .track-name {
-  color: #d4af37;
+  color: #d6c587;
   font-weight: 600;
 }
