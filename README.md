@@ -1,4 +1,4 @@
-# vir2ose — Official Website & Audio Engineering Ecosystem
+Waldemar Krucinski [vir2ose] — Official Website & Audio Engineering Ecosystem
 
 Offizielle Webpräsenz und digitales Ökosystem von **Waldemar Krucinski (vir2ose)** — Staatlich zertifizierter Audio Engineer, Songwriter, DSP-Developer & Tonstudio Hannover.
 
