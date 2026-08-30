@@ -25,7 +25,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -35,8 +35,8 @@
 </head>
 <body class="bg-neutral-950 text-neutral-100 font-roboto antialiased selection:bg-[#928f51] selection:text-neutral-950">
 
-  <!-- Navigation Header -->
-  <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-neutral-950/75 backdrop-blur-md border-b border-[#928f51]/30">
+  <!-- Navigation Header (Glassy with soft blurred bottom transition) -->
+  <header id="main-header" class="fixed top-0 left-0 w-full z-50 glass-header">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <!-- Brand Logo -->
@@ -109,30 +109,30 @@
     </div>
   </header>
 
-  <!-- Hero Section (Left-aligned over the black/grey bricks, 15% more transparent overlay so portrait shines) -->
+  <!-- Hero Section -->
   <section id="hero" class="relative min-h-screen flex items-center justify-start pt-28 pb-20 overflow-hidden hero-bg">
     
-    <!-- 15% More Transparent Overlay (Lighter gradient from left bricks to right) -->
-    <div class="absolute inset-0 bg-gradient-to-r from-neutral-950/80 via-neutral-950/45 to-neutral-950/20 z-0"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-neutral-950/40 via-transparent to-neutral-950 z-0"></div>
+    <!-- Transparent Soft Overlay (Preserving portrait visibility on right) -->
+    <div class="absolute inset-0 bg-gradient-to-r from-neutral-950/85 via-neutral-950/40 to-transparent z-0"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-neutral-950/40 via-transparent to-neutral-950/90 z-0"></div>
 
     <div class="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Left-aligned content block -->
-      <div class="max-w-2xl text-left">
+      <!-- Left-aligned content block over the brick wall -->
+      <div class="max-w-xl lg:max-w-2xl text-left">
         
         <!-- Studio Badge -->
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-neutral-950/80 border border-[#928f51]/50 text-[#d6c587] text-xs font-montserrat uppercase tracking-widest mb-6 backdrop-blur-md">
           <i class="fa-solid fa-compact-disc text-[#928f51]"></i> Studio vir2ose • Hannover
         </div>
 
-        <!-- Main Headline in Real Gold Metallic with Glanz & 54% Contour -->
+        <!-- Main Headline in Real Gold Metallic with Glanz -->
         <h1 class="font-montserrat font-extrabold text-3xl sm:text-5xl lg:text-6xl gold-metallic-text tracking-tight leading-tight mb-6">
           Songwriting, Sounddesign und Musikproduktion in Hannover
         </h1>
 
         <!-- Subheadline -->
-        <p class="font-roboto font-light text-base sm:text-lg md:text-xl text-neutral-200 max-w-xl mb-10 leading-relaxed drop-shadow-md">
+        <p class="font-roboto font-light text-base sm:text-lg md:text-xl text-neutral-200 max-w-lg mb-10 leading-relaxed drop-shadow-md">
           Professionelle Musikproduktionen, Audiobearbeitungen und Sounddesign im Tonstudio <span class="text-[#d6c587] font-medium">vir2ose</span> in Hannover
         </p>
 
@@ -147,8 +147,8 @@
           </a>
         </div>
 
-        <!-- Social Hub Bar (Left-aligned) -->
-        <div class="pt-6 border-t border-neutral-800/80 max-w-lg">
+        <!-- Social Hub Bar -->
+        <div class="pt-6 border-t border-neutral-800/80 max-w-md">
           <p class="text-xs uppercase tracking-widest text-[#928f51] mb-4 font-montserrat font-semibold">Folgen • Teilen • Hören</p>
           <div class="flex items-center gap-3">
             <a href="https://www.facebook.com/waldemar.krucinski/" target="_blank" aria-label="Facebook" class="social-icon-btn hover:bg-blue-600 hover:text-white">
@@ -183,13 +183,16 @@
   <section id="bio" class="relative py-24 bg-neutral-950 text-neutral-200">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
       
-      <!-- Section Title -->
+      <!-- Section Title (BIO close together, underline exactly as wide as BIO, quote non-italic) -->
       <div class="text-center mb-16">
-        <h2 class="font-abril text-4xl sm:text-5xl md:text-6xl gold-metallic-text mb-3 tracking-widest">B I O</h2>
-        <div class="w-24 h-1 bg-[#928f51] mx-auto rounded-full mb-6"></div>
-        <blockquote class="italic text-lg sm:text-xl font-montserrat text-neutral-300 font-light">
+        <div class="inline-flex flex-col items-center">
+          <h2 class="font-abril text-4xl sm:text-5xl md:text-6xl gold-metallic-text tracking-normal">BIO</h2>
+          <div class="w-full h-1 bg-[#928f51] mt-2 rounded-full shadow-sm shadow-[#928f51]/40"></div>
+        </div>
+        
+        <p class="text-lg sm:text-xl font-montserrat text-neutral-200 font-normal tracking-wide not-italic mt-6">
           "EIN SONG FÜR DICH IST EINE FREUDE FÜR MICH"
-        </blockquote>
+        </p>
       </div>
 
       <!-- Bio Content Card -->
@@ -214,7 +217,7 @@
           </p>
 
           <p>
-            Waldemar Krucinski hat seine musikalischen Erfahrungen über viele Jahre hinweg durch die Zusammenarbeit mit zahlreichen renommierten Künstlern und Musikern gesammelt, was ihn sowohl mental als auch kreativ kontinuierlich bereichert hat. <em>Allen diesen Menschen gilt sein aufrichtiger Dank.</em>
+            Waldemar Krucinski hat seine musikalischen Erfahrungen über viele Jahre hinweg durch die Zusammenarbeit mit zahlreichen renommierten Künstlern und Musikern gesammelt, was ihn sowohl mental als auch kreativ kontinuierlich bereichert hat. <span class="text-neutral-200">Allen diesen Menschen gilt sein aufrichtiger Dank.</span>
           </p>
 
           <div class="pt-4 border-t border-neutral-800 text-neutral-200 font-normal">
@@ -272,7 +275,7 @@
       
       <!-- Section Title -->
       <div class="text-center mb-16">
-        <h2 class="font-abril text-4xl sm:text-5xl md:text-6xl gold-metallic-text mb-3 tracking-widest">NEUE PROJEKTE</h2>
+        <h2 class="font-abril text-4xl sm:text-5xl md:text-6xl gold-metallic-text mb-3 tracking-normal">NEUE PROJEKTE</h2>
         <div class="w-24 h-1 bg-[#928f51] mx-auto rounded-full mb-4"></div>
         <p class="text-neutral-400 font-montserrat text-sm sm:text-base">Höre exklusive Tracks & aktuelle Produktionen aus dem Studio</p>
       </div>
@@ -466,7 +469,7 @@
       
       <!-- Section Title -->
       <div class="text-center mb-16">
-        <h2 class="font-abril text-4xl sm:text-5xl md:text-6xl gold-metallic-text mb-3 tracking-widest">GALERIE</h2>
+        <h2 class="font-abril text-4xl sm:text-5xl md:text-6xl gold-metallic-text mb-3 tracking-normal">GALERIE</h2>
         <div class="w-24 h-1 bg-[#928f51] mx-auto rounded-full mb-4"></div>
         <p class="text-neutral-400 font-montserrat text-sm sm:text-base">Einblicke in Tonstudio, Sessions und Audio-Hardware</p>
       </div>
@@ -585,7 +588,7 @@
       
       <!-- Section Title -->
       <div class="text-center mb-16">
-        <h2 class="font-abril text-4xl sm:text-5xl md:text-6xl gold-metallic-text mb-3 tracking-widest">Partner</h2>
+        <h2 class="font-abril text-4xl sm:text-5xl md:text-6xl gold-metallic-text mb-3 tracking-normal">Partner</h2>
         <div class="w-24 h-1 bg-[#928f51] mx-auto rounded-full mb-4"></div>
         <p class="text-neutral-400 font-montserrat text-sm sm:text-base">Streaming-Plattformen, Bands, Künstler & Kooperationen</p>
       </div>
@@ -668,7 +671,7 @@
       
       <!-- Section Title -->
       <div class="text-center mb-16">
-        <h2 class="font-abril text-4xl sm:text-5xl md:text-6xl gold-metallic-text mb-3 tracking-widest">S T A Y&nbsp; T U N E D</h2>
+        <h2 class="font-abril text-4xl sm:text-5xl md:text-6xl gold-metallic-text mb-3 tracking-normal">S T A Y&nbsp; T U N E D</h2>
         <div class="w-24 h-1 bg-[#928f51] mx-auto rounded-full mb-6"></div>
         <p class="text-neutral-400 font-montserrat text-sm sm:text-base">Abonniere Neuigkeiten oder nimm direkt Kontakt mit Waldemar Krucinski auf</p>
       </div>

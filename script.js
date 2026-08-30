@@ -18,15 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Header Scroll Effect
+  // 2. Header Scroll Glassmorphism Effect
   const header = document.getElementById('main-header');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header.classList.add('bg-neutral-950/95', 'shadow-lg', 'shadow-black/50');
-      header.classList.remove('bg-neutral-950/80');
+    if (window.scrollY > 40) {
+      header.classList.add('scrolled');
     } else {
-      header.classList.remove('bg-neutral-950/95', 'shadow-lg', 'shadow-black/50');
-      header.classList.add('bg-neutral-950/80');
+      header.classList.remove('scrolled');
     }
   });
 
@@ -114,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (!name || !email) return;
 
-      formFeedback.className = 'p-4 rounded-xl text-center text-xs font-medium bg-amber-500/10 border border-amber-500/30 text-amber-300 block animate-fade-in';
+      formFeedback.className = 'p-4 rounded-xl text-center text-xs font-medium bg-[#928f51]/15 border border-[#928f51]/40 text-[#d6c587] block animate-fade-in';
       formFeedback.innerHTML = `Vielen Dank, <strong>${name}</strong>! Deine Anmeldung (${email}) wurde erfolgreich übermittelt.`;
 
       newsletterForm.reset();
