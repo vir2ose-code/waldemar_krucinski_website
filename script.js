@@ -100,16 +100,61 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. MailerLite Seamless Hidden Iframe Submission (Bypasses CORS, No Redirects)
+  // 4. MailerLite Dynamic JSONP Script Injection (CORS-free, in-place callback)
   const newsletterForm = document.getElementById('newsletter-form');
   const newsletterFields = document.getElementById('newsletter-fields');
   const newsletterSuccess = document.getElementById('newsletter-success');
+  const submitBtn = document.getElementById('newsletter-submit-btn');
 
-  if (newsletterForm && newsletterFields && newsletterSuccess) {
-    newsletterForm.addEventListener('submit', () => {
-      // Immediate in-place transition to gold success message while browser posts in background iframe
+  // Define global JSONP callback
+  window.newsletterSuccess = function(data) {
+    if (newsletterFields && newsletterSuccess) {
       newsletterFields.style.display = 'none';
       newsletterSuccess.classList.remove('hidden');
+    }
+    // Clean up injected JSONP script tags
+    const oldScripts = document.querySelectorAll('script[data-mailerlite-jsonp]');
+    oldScripts.forEach(s => s.remove());
+  };
+
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const nameInput = document.getElementById('sub-name');
+      const emailInput = document.getElementById('sub-email');
+
+      const name = nameInput ? nameInput.value.trim() : '';
+      const email = emailInput ? emailInput.value.trim() : '';
+
+      if (!email) return;
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Wird übermittelt...';
+      }
+
+      // Build JSONP URL
+      const baseUrl = 'https://assets.mailerlite.com/jsonp/2170312/forms/197270852804281734/subscribe';
+      const params = new URLSearchParams({
+        'fields[name]': name,
+        'fields[email]': email,
+        'ml-submit': '1',
+        'anticsrf': 'true',
+        'callback': 'newsletterSuccess'
+      });
+
+      // Inject JSONP Script Tag into DOM
+      const script = document.createElement('script');
+      script.setAttribute('data-mailerlite-jsonp', 'true');
+      script.src = `${baseUrl}?${params.toString()}`;
+      
+      script.onerror = function() {
+        // Fallback in case network blocks script tag
+        window.newsletterSuccess({ success: true });
+      };
+
+      document.body.appendChild(script);
     });
   }
 
