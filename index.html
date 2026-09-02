@@ -37,6 +37,25 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+  <!-- Tailwind CSS CDN for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            abril: ['"Abril Fatface"', 'serif'],
+            montserrat: ['Montserrat', 'sans-serif'],
+            roboto: ['Roboto', 'sans-serif'],
+          },
+          colors: {
+            gold: '#928f51',
+          }
+        }
+      }
+    }
+  </script>
+
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -1137,25 +1156,6 @@
 
     </div>
   </footer>
-
-  <!-- Tailwind CSS CDN for styling -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            abril: ['"Abril Fatface"', 'serif'],
-            montserrat: ['Montserrat', 'sans-serif'],
-            roboto: ['Roboto', 'sans-serif'],
-          },
-          colors: {
-            gold: '#928f51',
-          }
-        }
-      }
-    }
-  </script>
 
   <!-- Scripts -->
   <script src="player.js"></script>
